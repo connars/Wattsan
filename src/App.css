@@ -1,0 +1,24 @@
+:root {
+  --color-black: #1B1B1B;
+  --color-dark-gray: #363636;
+  --color-blue: #4376FB;
+  --color-light-gray: #F5F5F5;
+  --color-white: #FAFAFA;
+  --red: #e50b00;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+@media (max-width: 830px) {
+ 
+}
+
+button {
+  stroke: none;
+  border: none;  
+}

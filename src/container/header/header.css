@@ -1,0 +1,150 @@
+.header {
+    padding: 0px 20px;
+    color: white !important;
+    position: fixed;
+
+    right: 0;
+    left: 0;
+    transition: 0.3s;
+    z-index: 22;
+}
+.header.scrolled {
+    background-color: white;
+}
+.header.scrolled{
+    fill: white;
+}
+
+.header path{
+    fill: white;
+    transition: 0.4s;
+}
+.header .cls-1{
+    fill: var(--red);
+}
+.header.scrolled .cls-1{
+    fill: var(--red);
+}
+
+.header.scrolled path{
+    fill: black;
+}
+
+.header.scrolled {
+    
+}
+.header__right-nav-list a {
+    color: white;
+}
+.header__right-nav-list a:hover {
+    color: var(--red);
+}
+
+.header__right-nav-item:hover {
+    color: white !important;
+}
+.header.scrolled .header__right-nav-list a{
+    color: black;
+}
+.header.scrolled .header__right-nav-list a:hover{
+    color: var(--red);
+}
+
+.header.scrolled {
+
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
+
+.header__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.header__right-nav-list {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+.header__right-nav-list a{
+    text-decoration: none;
+}
+
+.login {
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.nav-burger {
+    display: none;
+}
+.nav-burger span {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.nav-burger.active span:nth-child(1) {
+    width: 8px;
+    transform: rotate(30deg);
+}
+.nav-burger.active {
+    position: relative;
+}
+.nav-burger.active span:nth-child(3) {
+    width: 8px;
+    top: 0;
+    position: absolute;
+    right: 0;
+    transform: rotate(-30deg);
+}
+
+.header__right-nav-link:hover {
+    color: var(--red);
+}
+
+.header__left img{
+    width: 160px;
+}
+@media (max-width: 830px) {
+    .nav-burger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .header__right-nav {
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        right: 0;
+        border-radius: 14px;
+        /* box-shadow: 0px 5px 10px rgba(31, 31, 31, 0.336); */
+
+    }
+    .header__right-nav.active {
+        display: block;
+    }
+    .header__right-nav-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login {
+        font-weight: 600;
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,14 @@
+.card__inner h2{
+    color: black;
+}
+
+.card {
+    background-color: #e4e5e6;
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}

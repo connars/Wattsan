@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-color: white;
+}
+
+.main-btn {
+  background-color: #e50b00;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 18px;
+}
+
+.main-btn a{
+  font-weight: 600;
+  color: white !important;
+}
+
+.nohover:hover{
+  font-weight: 600;
+  color: white !important;
+}
