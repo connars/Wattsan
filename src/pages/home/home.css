@@ -133,7 +133,16 @@
     border-radius: 16px;
 }
 
-
+@media (max-width: 830px) {
+    /* Медиа-запрос для устройств с шириной экрана не более 768px (например, мобильные устройства) */
+    .about__list {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+  }
 
 
 
@@ -153,3 +162,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
+
+@media (max-width: 830px) {
+    /* Медиа-запрос для устройств с шириной экрана не более 768px (например, мобильные устройства) */
+    .market__cards {
+      grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
+    }
+  }

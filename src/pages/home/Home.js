@@ -9,34 +9,36 @@ import icon2 from '../../assets/icons/about/ic2.svg'
 import icon3 from '../../assets/icons/about/ic3.svg'
 import icon4 from '../../assets/icons/about/ic4.svg'
 
+import homecard1 from '../../assets/images/home/p1.webp'
+
 const cardsData = [
   {
-    img: `${icon1}`,
-    title: 'Заголовок 1',
+    img: `${homecard1}`,
+    title: 'Лазерные граверы и резаки',
     link: '/login',
   },
   {
-    img: `${icon1}`,
+    img: `${homecard1}`,
     title: 'Заголовок 2',
     link: '/ссылка_2',
   },
   {
-    img: `${icon1}`,
+    img: `${homecard1}`,
     title: 'Заголовок 3',
     link: '/ссылка_2',
   },
   {
-    img: `${icon1}`,
+    img: `${homecard1}`,
     title: 'Заголовок 4',
     link: '/ссылка_2',
   },
   {
-    img: `${icon1}`,
+    img: `${homecard1}`,
     title: 'Заголовок 5',
     link: '/ссылка_2',
   },
   {
-    img: `${icon1}`,
+    img: `${homecard1}`,
     title: 'Заголовок 6',
     link: '/ссылка_2',
   },

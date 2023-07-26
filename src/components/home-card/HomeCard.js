@@ -6,7 +6,7 @@ function HomeCard({index, img, title, link }) {
     <Link key={index} to={link} className='card'>
       <div className='card__inner'>
           <img src={img} />
-          <h1>
+          <h1 className='card__title'>
             {title}
           </h1>
       </div>
