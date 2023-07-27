@@ -15,12 +15,12 @@ const cardsData = [
   {
     img: `${homecard1}`,
     title: 'Лазерные граверы и резаки',
-    link: '/login',
+    link: '/1',
   },
   {
     img: `${homecard1}`,
     title: 'Заголовок 2',
-    link: '/ссылка_2',
+    link: '/2',
   },
   {
     img: `${homecard1}`,

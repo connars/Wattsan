@@ -2,6 +2,8 @@ import './header.css';
 import { useRef, useEffect } from 'react';
 import logo from '../../assets/icons/Logo.svg'
 import { Link } from 'react-router-dom';
+import { useAppRoutes } from '../../context/AppContext';
+import { allRoutes } from '../../App';
 
 function Header() {
   let nav = useRef(null);
@@ -55,6 +57,9 @@ function Header() {
     };
   }, []);
 
+  const routes = useAppRoutes();
+
+  console.dir(routes);
   return (
     <header className='header'>
       <div className='header__inner'>
@@ -97,13 +102,32 @@ function Header() {
                 <ul className='header__right-nav-list'>
                   
                   <li className='header__right-nav-item'>
-                    <a className='header__right-nav-link' href='#'>Про нас</a>
+                    <Link className='header__right-nav-link' to='/'>Главная</Link>
                   </li>
 
                   <li className='header__right-nav-item'>
-                    <a className='header__right-nav-link' href='#'>Каталог</a>
+                    <Link className='header__right-nav-link' to='/'>Каталог</Link>
                   </li>
 
+                  <li className='header__right-nav-item'>
+                    <Link className='header__right-nav-link' to='/1'>1 категория</Link>
+                  </li>
+
+                  <li className='header__right-nav-item'>
+                    <Link className='header__right-nav-link' to='/2'>2 категория</Link>
+                  </li>
+
+                  <li className='header__right-nav-item'>
+                    <Link className='header__right-nav-link' to='/laser/ссылка_2'>Тест товарной</Link>
+                  </li>
+
+                  {allRoutes.map((route, index) => (
+                    <li key={index} className='header__right-nav-item'>
+                      <Link className='header__right-nav-link' to={route.path}>
+                        {route}
+                      </Link>
+                    </li>
+                  ))}
 
                   {/* <li className='header__right-nav-item login'>
                     <Link to={'/login'} className='header__right-nav-item'>Login</Link>
