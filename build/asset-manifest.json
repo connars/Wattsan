@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.90f203cb.css",
-    "main.js": "/static/js/main.13167fd9.js",
+    "main.css": "/static/css/main.4c6debfd.css",
+    "main.js": "/static/js/main.325f5d91.js",
     "static/js/787.c23b093c.chunk.js": "/static/js/787.c23b093c.chunk.js",
     "static/media/intro02.mp4": "/static/media/intro02.5a17b5c35c612c12b8ac.mp4",
     "static/media/p1.webp": "/static/media/p1.b882cfef853bc2b7e158.webp",
@@ -13,12 +13,12 @@
     "static/media/apple-logo.svg": "/static/media/apple-logo.c1cd0567c9476ed3afe88b35aec294ef.svg",
     "static/media/g-logo.svg": "/static/media/g-logo.d6fb727d0fadc632d670302504d44e30.svg",
     "index.html": "/index.html",
-    "main.90f203cb.css.map": "/static/css/main.90f203cb.css.map",
-    "main.13167fd9.js.map": "/static/js/main.13167fd9.js.map",
+    "main.4c6debfd.css.map": "/static/css/main.4c6debfd.css.map",
+    "main.325f5d91.js.map": "/static/js/main.325f5d91.js.map",
     "787.c23b093c.chunk.js.map": "/static/js/787.c23b093c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90f203cb.css",
-    "static/js/main.13167fd9.js"
+    "static/css/main.4c6debfd.css",
+    "static/js/main.325f5d91.js"
   ]
 }

@@ -2,8 +2,6 @@ import './header.css';
 import { useRef, useEffect } from 'react';
 import logo from '../../assets/icons/Logo.svg'
 import { Link } from 'react-router-dom';
-import { useAppRoutes } from '../../context/AppContext';
-import { allRoutes } from '../../App';
 
 function Header() {
   let nav = useRef(null);
@@ -57,9 +55,6 @@ function Header() {
     };
   }, []);
 
-  const routes = useAppRoutes();
-
-  console.dir(routes);
   return (
     <header className='header'>
       <div className='header__inner'>
@@ -102,41 +97,60 @@ function Header() {
                 <ul className='header__right-nav-list'>
                   
                   <li className='header__right-nav-item'>
-                    <Link className='header__right-nav-link' to='/'>Главная</Link>
+                    <Link className='header__right-nav-link' to='/'>Home</Link>
+
                   </li>
 
                   <li className='header__right-nav-item'>
-                    <Link className='header__right-nav-link' to='/'>Каталог</Link>
+                    <Link className='header__right-nav-link' to='/'>Equipment</Link>
+                    <div className='header__right-nav-drop'>
+                      <ul className='header__right-nav-drop-list'>
+                        <li className='header__right-nav-drop-item'>
+                          <a className='header__right-nav-drop-link' href='#'>
+                            Laser Machines
+                          </a>
+                        </li>
+                        <li className='header__right-nav-drop-item'>
+                          <a className='header__right-nav-drop-link' href='#'>
+                            Laser Machines
+                          </a>
+                        </li>
+                        <li className='header__right-nav-drop-item'>
+                          <a className='header__right-nav-drop-link' href='#'>
+                            Laser Machines
+                          </a>
+                        </li>
+                        <li className='header__right-nav-drop-item'>
+                          <a className='header__right-nav-drop-link' href='#'>
+                            Laser Machines
+                          </a>
+                        </li>
+                        <li className='header__right-nav-drop-item'>
+                          <a className='header__right-nav-drop-link' href='#'>
+                            Laser Machines
+                          </a>
+                        </li>
+                        <li className='header__right-nav-drop-item'>
+                          <a className='header__right-nav-drop-link' href='#'>
+                            Laser Machines
+                          </a>
+                        </li>
+                        <li className='header__right-nav-drop-item'>
+                          <a className='header__right-nav-drop-link' href='#'>
+                            Laser Machines
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
 
                   <li className='header__right-nav-item'>
-                    <Link className='header__right-nav-link' to='/1'>1 категория</Link>
+                    <Link className='header__right-nav-link' to='/laser'>Services</Link>
                   </li>
 
                   <li className='header__right-nav-item'>
-                    <Link className='header__right-nav-link' to='/2'>2 категория</Link>
+                    <Link className='header__right-nav-link' to='/2'>Company</Link>
                   </li>
-
-                  <li className='header__right-nav-item'>
-                    <Link className='header__right-nav-link' to='/laser/ссылка_2'>Тест товарной</Link>
-                  </li>
-
-                  {allRoutes.map((route, index) => (
-                    <li key={index} className='header__right-nav-item'>
-                      <Link className='header__right-nav-link' to={route.path}>
-                        {route}
-                      </Link>
-                    </li>
-                  ))}
-
-                  {/* <li className='header__right-nav-item login'>
-                    <Link to={'/login'} className='header__right-nav-item'>Login</Link>
-                  </li> */}
-
-                  <li className='header__right-nav-item main-btn'>
-                    <Link to={'/register'} className='header__right-nav-item'>Запрос</Link>
-                  </li>
-
                 </ul>
             </nav>
         </div>

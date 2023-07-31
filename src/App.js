@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { AppProvider } from "./context/AppContext";
 
 import Header from "./container/header/Header";
 import Footer from "./container/footer/Footer";
@@ -120,10 +119,8 @@ function App() {
     ),
   ];
 
-  console.log(allRoutes);
-
   return (
-    <AppProvider allRoutes={allRoutes}>
+    <>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -165,11 +162,9 @@ function App() {
        
         </Routes>
         <Footer />
-      </AppProvider>
+      </>
   );
 }
 
-export const allRoutes = [
-  // Ваши маршруты
-];
+
 export default App;

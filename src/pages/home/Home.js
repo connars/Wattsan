@@ -62,9 +62,9 @@ function Home() {
           </div>
           <div className='hero__right'>
               <ul>
-                <li>nav 1</li>
-                <li>nav 2</li>
-                <li>nav 3</li>
+                <li>Laser Machines</li>
+                <li>CNC Routes</li>
+                <li>Laser Markers</li>
                 <li>nav 4</li>
                 <li>nav 5</li>
                 <li>nav 6</li>
@@ -115,6 +115,35 @@ function Home() {
           </div>
           <div className='about__right'>
 
+              <div className='about__right-item'>
+                <h3 className='about__right-title'>
+                  2009
+                </h3>
+                <p className='about__right-text'>
+                  Завод Wattsan успешно работает с 2009 года на территории Китая
+                </p>
+              </div>
+
+              <div className='about__right-item'>
+                <h3 className='about__right-title'>
+                  900+
+                </h3>
+                <p className='about__right-text'>
+                  Производимая продукция используется на более чем 900 предприятиях
+                </p>
+              </div>
+
+              <div className='about__right-item'>
+                <h3 className='about__right-title'>
+                  60
+                </h3>
+                <p className='about__right-text'>
+                  Доставка оборудования осуществляется в течение 60 дней
+                </p>
+              </div>
+              <Link className='about__right-link' to='/company'>
+                Подробнее о компании
+              </Link>
           </div>
         </div>
       </section>

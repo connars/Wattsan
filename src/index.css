@@ -4,6 +4,11 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     background-color: white;
+    overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .main-btn {

@@ -26,7 +26,7 @@
     color: var(--red);
 }
 
-.card:hover::before {
+/* .card:hover::before {
     content: 'Перейти >';
     transition: 0.3s;
     display: flex;
@@ -42,10 +42,9 @@
     width: 100%;
     backdrop-filter: blur(2px);
     height: 100%;
-    /* background-color: rgba(255, 71, 71, 0.192); */
     background-color: var(--red);
     position: absolute;
-}
+} */
 
 .card__inner img {
     width: 200px;
@@ -66,4 +65,25 @@
 .card:hover {
     text-decoration: none;
     color: var(--red);
+}
+
+.card__bottom {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.card__bottom h1{
+    text-align: left;
+    font-size: 22px;
+    margin: 0;
+
+}
+
+.card__bottom svg {
+    transform: rotate(-90deg);
+    width: 20px;
 }
